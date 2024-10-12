@@ -33,7 +33,7 @@ const Header = () => {
         className=" flex justify-between gap-[10px] items-center max-w-[1200px] mx-auto h-full"
       >
         <div className=" min-w-[max-content]">
-          <Image alt="nav-logo-agency" src={navLogo} height={55} />
+          <Image alt="nav-logo-agency" src={navLogo} height={70} />
         </div>
         <div>
           <ul className=" nav__link font-[500] flex justify-center max-tablet:hidden flex-wrap gap-[24px] text-[#23282d]">

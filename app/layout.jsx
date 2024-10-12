@@ -594,13 +594,13 @@ export default function RootLayout({ children }) {
                       className=" mb-[30px]"
                       alt="azency-footer-logo"
                       src={navLogo}
-                      height={40}
+                      height={55}
                     />
                     <p className=" text-[#908f8f] my-[14px] text-[14px] font-[300]">
                       BlueFox Digital <br /> Agency
                     </p>
                     <p className="text-[#000] my-[14px] text-[14px] font-[300]">
-                      bluefoxpvtltd@gmail.com
+                      info@bluefoxdigital.agency
                     </p>
                     <ul className=" flex gap-[18px] text-[24px] mt-[20px]">
                       <li>
