@@ -1,8 +1,9 @@
 .nav__link li {
   transition: all 0.2s linear;
+  color: #000 !important;
 }
 .nav__link li:hover {
-  color: #0a84ff;
+  color: #0a84ff !important;
   cursor: pointer;
   transition: all 0.2s linear;
 }
@@ -48,4 +49,52 @@
   border: 1px solid rgb(234, 234, 234);
   border-top: 0;
   padding: 10px 30px 10px 30px;
+}
+.hero__desc a {
+  color: #0a84ff;
+  font-weight: 500;
+}
+.what__we_do a {
+  color: #0a84ff;
+  font-weight: 500;
+}
+.counter__gradiant {
+  width: max-content;
+}
+.counter__gradiant h3 {
+  background: linear-gradient(to right, #00a3fc, #0073b2);
+  background-clip: text;
+  width: max-content;
+  color: transparent;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 0.9;
+}
+.counter__gradiant p {
+  width: max-content;
+  font-size: 14px;
+  color: #0093e3;
+  margin-left: 3px;
+}
+.about__us__list div span {
+  font-size: 30px;
+  color: #0174b5;
+}
+.about__us__list div p {
+  font-weight: 300;
+  color: #0178bc;
+  margin-top: 15px;
+}
+.project__showcase a p {
+  color: #0073b2;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.sponsore__list div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sponsore__list div img {
+  width: 90px;
 }
