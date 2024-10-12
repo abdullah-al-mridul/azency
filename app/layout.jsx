@@ -73,7 +73,7 @@ export default function RootLayout({ children }) {
               <div className=" h-[var(--headerHeight)]"></div>
               <div className=" mt-[80px]">
                 <p className=" text-[#000] text-center text-[14px] font-[300]">
-                  Creative Design & Development Agency
+                  BlueFox Digital Agency
                 </p>
                 <h1 className=" mt-[30px] text-[54px] text-center text-[#0174B5] font-[900]">
                   Digital Marketing.
