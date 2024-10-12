@@ -599,9 +599,12 @@ export default function RootLayout({ children }) {
                     <p className=" text-[#908f8f] my-[14px] text-[14px] font-[300]">
                       BlueFox Digital <br /> Agency
                     </p>
-                    <p className="text-[#000] my-[14px] text-[14px] font-[300]">
+                    <a
+                      href="mailto:info@bluefoxdigital.agency"
+                      className="text-[#000] my-[14px] text-[14px] font-[300]"
+                    >
                       info@bluefoxdigital.agency
-                    </p>
+                    </a>
                     <ul className=" flex gap-[18px] text-[24px] mt-[20px]">
                       <li>
                         <a
