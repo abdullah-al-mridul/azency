@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import navLogo from "../../public/nav-logo.png";
+import navLogo from "../../public/logo.png";
 import { Squash as Hamburger } from "hamburger-react";
 const Header = () => {
   useEffect(() => {

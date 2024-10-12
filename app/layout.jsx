@@ -1,6 +1,6 @@
 import Image from "next/image";
 import "./globals.css";
-import navLogo from "../public/nav-logo.png";
+import navLogo from "../public/logo.png";
 import azencyLogo from "../public/azency-footer-logo.png";
 import { Poppins } from "next/font/google";
 import "@/app/styles/homepage.css";
@@ -237,13 +237,6 @@ export default function RootLayout({ children }) {
                 >
                   View Shopify Experts Profile
                 </a>
-                <div className=" mt-[40px]">
-                  <Image
-                    className=" max-w-[900px] mx-auto"
-                    src={ShopifyExpertId}
-                    alt="shopify-account"
-                  />
-                </div>
               </div>
               <div className=" mt-[70px]">
                 <div className=" flex gap-[30px] mb-[30px] items-center">
@@ -604,10 +597,10 @@ export default function RootLayout({ children }) {
                       height={40}
                     />
                     <p className=" text-[#908f8f] my-[14px] text-[14px] font-[300]">
-                      Creative Design & <br /> Development Agency
+                      BlueFox Digital <br /> Agency
                     </p>
                     <p className="text-[#000] my-[14px] text-[14px] font-[300]">
-                      Info@Azency.Com
+                      bluefoxpvtltd@gmail.com
                     </p>
                     <ul className=" flex gap-[18px] text-[24px] mt-[20px]">
                       <li>
@@ -681,20 +674,8 @@ export default function RootLayout({ children }) {
                 </div>
                 <div className=" mt-[55px] text-[14px] flex max-laptop:gap-[50px] max-laptop:justify-between max-laptop:flex-wrap gap-[230px]">
                   <div>
-                    2035 Sunset Lake Road, Suite B-2, Newark, <br /> DE - 19702
-                    Delaware, USA <br />
-                    +1 863 825 5654
-                  </div>
-                  <div>
-                    II floor, 125, Shahpur Jat, <br /> 110049, Delhi , India{" "}
-                    <br />
-                    +91 8447769638
-                  </div>
-                  <div>
-                    Balkumari 44700,
-                    <br />
-                    Lalitpur, Nepal <br />
-                    +977 9801282911
+                    Paruhang Chowk, Itahari-6, Sunsari District, <br />
+                    Province No. 1, Nepal
                   </div>
                 </div>
                 <div className=" mt-[35px]">
@@ -709,7 +690,9 @@ export default function RootLayout({ children }) {
           </div>
         </div>
         <div className=" bg-[#fdece0] text-[14px] py-[20px] mt-[15px]">
-          <p className=" text-center">© Azency, 2024 All Rights Reserved</p>
+          <p className=" text-center">
+            © BlueFox Digital Agency, 2024 All Rights Reserved
+          </p>
         </div>
       </body>
     </html>
