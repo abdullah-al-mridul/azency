@@ -6,3 +6,10 @@
   --headerHeight: 134px;
   --footerHeight: 505px;
 }
+::-webkit-scrollbar {
+  background: transparent;
+  width: 7px;
+}
+::-webkit-scrollbar-thumb {
+  background: #0174b5;
+}

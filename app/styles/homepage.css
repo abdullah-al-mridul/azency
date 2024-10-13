@@ -98,3 +98,45 @@
 .sponsore__list div img {
   width: 90px;
 }
+
+@media screen and (max-width: 1536px) {
+  .counter__gradiant h3 {
+    font-size: 45px;
+  }
+  .counter__gradiant p {
+    font-size: 13px;
+  }
+  .about__us__list div span {
+    font-size: 25px;
+  }
+  .about__us__list div p {
+    font-size: 14px;
+  }
+  .sponsore__list div img {
+    width: 70px;
+  }
+  .about__us__list div span {
+    width: max-content;
+    margin: 0 auto;
+    display: block;
+  }
+  .project__showcase a p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .counter__gradiant p {
+    font-size: 12px;
+  }
+  .counter__gradiant h3 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .counter__gradiant p {
+    font-size: 11px;
+  }
+  .counter__gradiant h3 {
+    font-size: 30px;
+  }
+}

@@ -33,10 +33,15 @@ const Header = () => {
         className=" flex justify-between gap-[10px] items-center max-w-[1200px] mx-auto h-full"
       >
         <div className=" min-w-[max-content]">
-          <Image alt="nav-logo-agency" src={navLogo} height={70} />
+          <Image
+            className=" max-desktop:h-[60px] max-laptop:h-[55px] max-mobile:h-[40px] max-tablet:h-[45px] w-auto"
+            alt="nav-logo-agency"
+            src={navLogo}
+            height={70}
+          />
         </div>
         <div>
-          <ul className=" nav__link font-[500] flex justify-center max-tablet:hidden flex-wrap gap-[24px] text-[#23282d]">
+          <ul className=" nav__link max-desktop:text-[15px] max-laptop-sm:text-[13px] max-laptop:text-[14px] transition-all font-[500] flex justify-center max-tablet:hidden flex-wrap max-laptop:gap-[18px] max-laptop-sm:gap-[16px] max-desktop:gap-[20px] gap-[24px] text-[#23282d]">
             <li>Home</li>
             <li className="hover__item items-center flex relative gap-[7px]">
               <span>Websites</span>
@@ -102,14 +107,19 @@ const Header = () => {
         <div className=" flex items-center gap-[10px]">
           <a
             href="#"
-            className=" max-mobile:hidden px-[30px] py-[10px] rounded-md bg-[#0a84ff]"
+            className=" max-mobile:hidden max-laptop:px-[20px] max-desktop:px-[25px] max-desktop:py-[8px] transition-all max-tablet:px-[18px] max-tablet:py-[5px] px-[30px] py-[10px] rounded-md bg-[#0a84ff]"
           >
-            <span className=" text-[15px] text-nowrap text-[#fff] font-[500]">
+            <span className=" text-[15px] max-desktop:text-[15px] max-laptop:text-[14px] max-laptop-sm:text-[13px]  text-nowrap text-[#fff] font-[500]">
               Get In Touch
             </span>
           </a>
           <div className=" hidden max-tablet:block">
-            <Hamburger size={23} toggled={isMenu} toggle={setIsMenu} />
+            <Hamburger
+              color="#0A84FF"
+              size={23}
+              toggled={isMenu}
+              toggle={setIsMenu}
+            />
           </div>
         </div>
       </div>

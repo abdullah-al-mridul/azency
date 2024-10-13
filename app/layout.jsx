@@ -66,21 +66,21 @@ export default function RootLayout({ children }) {
       <body className={`antialiased ${poppins.className}`}>
         <div className=" px-[40px] max-laptop:px-[20px]">
           <div className=" max-w-[1200px] mx-auto ">
-            <div className=" h-[var(--headerHeight)] fixed z-40 max-laptop:px-[20px] px-[40px] bg-[#fff] w-full left-0 gap-[10px] ">
+            <div className=" h-[var(--headerHeight)] max-desktop:h-[calc(var(--headerHeight)-20px)] max-laptop:h-[calc(var(--headerHeight)-40px)] max-laptop-sm:h-[calc(var(--headerHeight)-50px)] max-tablet:h-[calc(var(--headerHeight)-70px)] max-mobile:h-[calc(var(--headerHeight)-80px)] fixed z-40 max-laptop:px-[20px] px-[40px] bg-[#ffffff86] backdrop-blur-md w-full left-0 gap-[10px] ">
               <Header />
             </div>
             <div className=" min-h-[calc(calc(100vh-calc(var(--headerHeight)+var(--footerHeight)))+61px)]">
-              <div className=" h-[var(--headerHeight)]"></div>
-              <div className=" mt-[80px]">
-                <p className=" text-[#000] text-center text-[14px] font-[300]">
+              <div className=" h-[var(--headerHeight)] max-desktop:h-[calc(var(--headerHeight)-20px)] max-laptop:h-[calc(var(--headerHeight)-40px)] max-laptop-sm:h-[calc(var(--headerHeight)-50px)] max-tablet:h-[calc(var(--headerHeight)-70px)] max-mobile:h-[calc(var(--headerHeight)-80px)]"></div>
+              <div className=" mt-[80px] max-laptop-sm:mt-[45px] max-desktop:mt-[70px] transition-all">
+                <p className=" text-[#000] text-center max-mobile:text-[12px] text-[14px] max-desktop:text-[13px] transition-all font-[300]">
                   BlueFox Digital Agency
                 </p>
-                <h1 className=" mt-[30px] text-[54px] text-center text-[#0174B5] font-[900]">
+                <h1 className=" mt-[30px] max-tablet:text-[30px] max-mobile:text-[25px] max-desktop:mt-[20px] max-laptop:text-[40px] text-[54px] max-desktop:text-[45px] transition-all text-center text-[#0174B5] font-[900]">
                   Digital Marketing.
                   <br />
                   Website. Shopify. branding.
                 </h1>
-                <p className=" mt-[50px] mb-[100px] text-center font-[300] hero__desc">
+                <p className=" mt-[50px] mb-[100px] max-tablet:mb-[50px] max-mobile:text-[11px] max-tablet:text-[12px] max-tablet:mt-[25px] transition-all max-laptop:text-[13px] max-laptop:max-w-[600px] max-laptop:mx-auto max-desktop:mt-[40px] max-desktop:text-[14px] text-center font-[300] hero__desc">
                   A digital marketing agency consisting of top experts in{" "}
                   <a>Shopify store development</a>,{" "}
                   <a>social media marketing</a>,{" "}
@@ -92,21 +92,23 @@ export default function RootLayout({ children }) {
                 </div>
               </div>
               <div>
-                <p className=" text-[14px] text-[#0272fa] mb-[50px]">
+                <p className=" text-[14px] max-laptop:text-center max-tablet:mb-[20px] max-mobile:text-[12px] text-[#0272fa] mb-[50px] max-desktop:mb-[40px] max-laptop:mb-[30px] transition-all">
                   What We Do
                 </p>
-                <h1 className=" font-[900] mb-[30px] text-[54px] text-[#0174B5]">
-                  An All-Rounded Digital <br /> Marketing Approach To <br />{" "}
-                  Your Brand’s Online <br /> Presence
+                <h1 className=" font-[900] max-tablet:text-[30px] mb-[30px] max-mobile:text-[25px] max-laptop:text-center max-laptop:text-[40px] transition-all max-desktop:text-[45px] max-desktop:mb-[20px] text-[54px] text-[#0174B5]">
+                  An All-Rounded Digital <br className=" max-mobile:hidden" />{" "}
+                  Marketing Approach To <br className=" max-mobile:hidden" />{" "}
+                  Your Brand’s Online <br className=" max-mobile:hidden" />{" "}
+                  Presence
                 </h1>
-                <p className=" font-[300] max-w-[740px] what__we_do">
+                <p className=" max-mobile:text-[11px] font-[300] max-w-[740px] max-laptop:mx-auto max-laptop:text-center max-tablet:max-w-[100%] max-tablet:text-[12px] max-laptop:text-[13px] max-laptop:max-w-[500px] max-desktop:max-w-[650px] transition-all max-desktop:text-[14px] what__we_do">
                   The great thing about Azency is that we provide all marketing
                   solutions in one! Get entire tech solutions provided for all
                   of your brand’s needs. From <a href="">website development</a>{" "}
                   to <a href="">Shopify migration</a>, <a href="">branding</a>,
                   and <a href="">digital promotions</a>. We’ve got you covered!
                 </p>
-                <div className=" grid grid-cols-2 mt-[70px] gap-[25px]">
+                <div className=" max-laptop:text-[14px] max-mobile:grid-cols-1 max-tablet:text-[13px] grid grid-cols-2 mt-[70px] gap-[25px]">
                   <div>
                     <div className="image__brightness transition-all">
                       <Image
@@ -182,15 +184,15 @@ export default function RootLayout({ children }) {
                 </div>
               </div>
               <div className=" mt-[120px]">
-                <p className=" text-[14px] text-[#0272fa] mb-[30px]">
+                <p className=" text-[14px] max-mobile:text-[12px] text-[#0272fa] mb-[30px] max-laptop:text-center">
                   Who We Are
                 </p>
-                <div className=" flex justify-between">
-                  <h1 className=" text-[40px] max-w-[600px] text-wrap font-[900] text-[#0174B5]">
+                <div className=" flex justify-between max-laptop:flex-col max-laptop:text-center max-laptop:mx-auto max-laptop:w-max">
+                  <h1 className=" text-[40px] max-tablet:text-[30px] max-tablet:max-w-[250px] max-mobile:text-[25px] transition-all max-desktop:text-[35px] max-w-[600px] text-wrap font-[900] text-[#0174B5]">
                     A digital marketing agency that provides 360-degree solution
                     to all of your online marketing needs.
                   </h1>
-                  <div className=" grid grid-cols-2 gap-x-[150px]">
+                  <div className=" grid grid-cols-2 max-laptop:gap-y-[20px] max-laptop:justify-items-center gap-x-[150px] max-laptop:mt-[40px] transition-all max-desktop:gap-x-[90px] max-laptop:gap-x-[50px] max-tablet:w-full max-tablet:gap-x-[20px]">
                     <div className="counter__gradiant">
                       <h3>5000+</h3>
                       <p>Creatives Made</p>
@@ -199,7 +201,7 @@ export default function RootLayout({ children }) {
                       <h3>250+</h3>
                       <p>Websites</p>
                     </div>
-                    <div className="counter__gradiant">
+                    <div className="counter__gradiant max-laptop:ml-[-30px] max-tablet:ml-[-25px]">
                       <h3>800+</h3>
                       <p>Projects</p>
                     </div>
@@ -215,13 +217,14 @@ export default function RootLayout({ children }) {
                   <Image
                     alt="shopify-experts"
                     height={22}
+                    className=" transition-all max-mobile:h-[15px] max-desktop:h-[20px] max-laptop:h-[17px] w-auto"
                     src={ShopifyExpertLogo}
                   />
                 </div>
-                <h1 className=" text-center mt-[30px] text-[54px] font-[900] text-[#0174B5]">
+                <h1 className=" text-center max-mobile:text-[25px] max-tablet:text-[30px] max-laptop:text-[35px] transition-all max-desktop:text-[45px] mt-[30px] max-desktop:mt-[20px] text-[54px] font-[900] text-[#0174B5]">
                   We Are <br /> Shopify Expert Partners
                 </h1>
-                <p className=" mt-[30px] text-center text-[#0082CD] max-w-[850px] mx-auto">
+                <p className=" mt-[30px] text-center max-mobile:text-[11px] max-tablet:text-[12px] text-[#0082CD] max-laptop:text-[13px] transition-all max-desktop:mt-[20px] max-desktop:text-[14px] max-w-[850px] max-desktop:max-w-[750px] max-laptop:max-w-[635px] max-tablet:max-w-full mx-auto max-laptop:mt-[15px]">
                   Azency as a certified{" "}
                   <a href="http://" target="_blank" rel="noopener noreferrer">
                     Shopify Expert
@@ -232,25 +235,35 @@ export default function RootLayout({ children }) {
                   marketing, we provide all services.
                 </p>
                 <a
-                  className=" block w-max mx-auto mt-[40px] text-[#007EC3] font-[500] py-[10px] px-[20px] rounded-md bg-[#a1dcffc5] hover:bg-[#a1dcffe1] transition-all"
+                  className=" block w-max mx-auto mt-[40px] max-mobile:text-[11px] max-tablet:mt-[25px] max-tablet:text-[12px] text-[#007EC3] font-[500] max-desktop:py-[8px] max-desktop:px-[15px]  py-[10px] px-[20px] rounded-md bg-[#a1dcffc5] hover:bg-[#a1dcffe1] transition-all max-desktop:mt-[30px] max-desktop:text-[14px] max-laptop:text-[13px]"
                   href="http://"
                 >
                   View Shopify Experts Profile
                 </a>
               </div>
-              <div className=" mt-[70px]">
-                <div className=" flex gap-[30px] mb-[30px] items-center">
-                  <Image height={30} alt="facebook-buiss" src={FacebookBuiss} />
+              <div className=" mt-[70px] max-laptop:mt-[100px]">
+                <div className=" flex gap-[30px] max-tablet:flex-col max-tablet:gap-[10px] mb-[30px] max-laptop:justify-center items-center">
+                  <Image
+                    height={30}
+                    alt="facebook-buiss"
+                    src={FacebookBuiss}
+                    className=" max-mobile:h-[25px] w-auto"
+                  />
                   <div className="h-max">
-                    <Image height={20} alt="google-part" src={GooglePart} />
+                    <Image
+                      height={20}
+                      alt="google-part"
+                      className=" max-mobile:h-[15px] w-auto"
+                      src={GooglePart}
+                    />
                   </div>
                 </div>
-                <div className=" flex gap-[30px]">
+                <div className=" flex gap-[30px] max-laptop:gap-0 max-laptop:justify-center">
                   <div>
-                    <h1 className=" text-[54px] text-[#0174B5] font-[900]">
+                    <h1 className=" text-[54px] max-mobile:text-[25px] transition-all max-tablet:text-[30px] max-laptop:text-center max-laptop:text-[35px] max-desktop:text-[45px] text-[#0174B5] font-[900]">
                       Facebook and <br /> Google Marketing Partners
                     </h1>
-                    <p className=" mt-[40px] font-[300]">
+                    <p className=" mt-[40px] font-[300] max-tablet:text-[12px] max-tablet:text-[11px] max-tablet:w-full max-laptop:max-w-[600px] max-laptop:w-max max-laptop:text-center  transition-all max-laptop:text-[13px] max-desktop:mt-[30px] max-laptop:mt-[20px] max-desktop:text-[14px]">
                       As a digital marketing agency, our services include{" "}
                       <a className=" text-[#0a84ff] font-[500]">
                         social media marketing
@@ -261,22 +274,26 @@ export default function RootLayout({ children }) {
                       advertising and PPC (Pay-Per-Click).
                     </p>
                   </div>
-                  <div>
-                    <Image alt="marketing-side-img" src={MarketingPart} />
+                  <div className=" max-laptop:hidden">
+                    <Image
+                      className=" max-desktop:max-w-[400px] transition-all"
+                      alt="marketing-side-img"
+                      src={MarketingPart}
+                    />
                   </div>
                 </div>
               </div>
-              <div className=" mt-[70px] ">
-                <h1 className=" text-[54px] text-[#0174B5] font-[900] mb-[35px]">
-                  The Azency <br /> Experience.
+              <div className=" mt-[70px] max-laptop:mt-[80px] transition-all max-desktop:mt-[50px]">
+                <h1 className=" text-[54px] max-mobile:text-[25px] max-tablet:text-[30px] text-[#0174B5] max-laptop:text-[35px] max-laptop:text-center transition-all max-desktop:text-[45px] font-[900] mb-[35px] max-desktop:mb-[20px]">
+                  The Azency <br className=" max-laptop:hidden" /> Experience.
                 </h1>
-                <p className=" font-[300] max-w-[550px] mb-[20px]">
+                <p className=" font-[300] max-mobile:text-[11px] max-tablet:w-full max-w-[550px] max-tablet:text-[12px] max-laptop:text-center max-laptop:mx-auto max-laptop:text-[13px] mb-[20px] transition-all max-desktop:text-[14px]">
                   We are hooked on providing creative approaches to make your
                   brand stand out. Don’t just find a solution, find the right
                   solution. With Azency, you get the brand development and
                   transformation that your business requires.
                 </p>
-                <p className=" font-[300] max-w-[550px] mb-[20px]">
+                <p className=" font-[300] max-w-[550px] max-mobile:text-[11px] max-tablet:text-[12px] max-tablet:w-full mb-[20px] max-laptop:text-center max-laptop:mx-auto max-laptop:text-[13px] transition-all max-desktop:text-[14px]">
                   We have collaborated with a diverse range of clients, from
                   fashion houses and electronics to jewellery lines and pet
                   stores. Thus, providing us with an all-rounded knowledge of
@@ -285,8 +302,10 @@ export default function RootLayout({ children }) {
                 </p>
               </div>
               <div className=" mt-[60px]">
-                <p className=" font-[300] text-[#0272fa] mb-[50px]">About Us</p>
-                <div className=" grid grid-cols-4 gap-y-[25px] about__us__list">
+                <p className=" max-mobile:text-[12px] font-[300] text-[#0272fa] max-laptop:text-center text-[14px] mb-[50px]">
+                  About Us
+                </p>
+                <div className=" grid grid-cols-4 max-mobile:grid-cols-1 max-laptop:grid-cols-2 max-laptop:justify-items-center gap-y-[25px] max-laptop:max-w-[800px] max-laptop:mx-auto about__us__list">
                   <div>
                     <span>
                       <TbWorldBolt />
@@ -337,19 +356,19 @@ export default function RootLayout({ children }) {
                   </div>
                 </div>
               </div>
-              <div className=" mt-[70px]">
-                <p className=" text-[14px] font-[400] text-[#0272fa] mb-[40px]">
+              <div className=" mt-[70px] max-laptop:mt-[80px] transition-all max-desktop:mt-[50px]">
+                <p className=" text-[14px] max-mobile:text-[12px] font-[400] max-laptop:text-center text-[#0272fa] mb-[40px] transition-all max-desktop:mb-[30px] max-laptop:mb-[10px]">
                   Our Services
                 </p>
-                <h1 className=" text-[54px] font-[900] text-[#0174B5]">
-                  Project <br /> Showcase
+                <h1 className=" text-[54px] font-[900] max-mobile:text-[25px] max-tablet:text-[30px] text-[#0174B5] max-laptop:text-[35px] max-laptop:text-center transition-all max-desktop:text-[45px]">
+                  Project <br className=" max-laptop:hidden" /> Showcase
                 </h1>
-                <p className=" font-[300] mt-[20px] max-w-[550px] mb-[50px]">
+                <p className=" font-[300] mt-[20px] max-w-[550px] max-mobile:text-[11px] mb-[50px] transition-all max-desktop:mb-[40px] max-laptop:text-center max-laptop:mx-auto max-desktop:text-[14px] max-tablet:text-[12px] max-tablet:w-full">
                   We have collaborated with a diverse range of clients, thus,
                   providing us an all-rounded knowledge of digital marketing,
                   Shopify store development and digital branding.
                 </p>
-                <div className=" grid grid-cols-4 gap-[20px] project__showcase">
+                <div className=" max-mobile:grid-cols-1 max-mobile:justify-items-center grid max-tablet:grid-cols-2 grid-cols-4 gap-[20px] project__showcase">
                   <div>
                     <a href="http://" target="_blank" rel="noopener noreferrer">
                       <Image
@@ -392,22 +411,22 @@ export default function RootLayout({ children }) {
                   </div>
                 </div>
                 <a
-                  className=" block w-max mt-[40px] text-[#007EC3] font-[500] py-[10px] px-[20px] rounded-md bg-[#a1dcffc5] hover:bg-[#a1dcffe1] transition-all"
+                  className=" max-mobile:text-[11px] block w-max mt-[40px] max-laptop:mx-auto max-desktop:mt-[35px] text-[#007EC3] font-[500] py-[10px] max-desktop:py-[8px] max-desktop:px-[16px] px-[20px] rounded-md bg-[#a1dcffc5] hover:bg-[#a1dcffe1] transition-all max-desktop:text-[14px] "
                   href=""
                 >
                   View More
                 </a>
               </div>
-              <div className=" mt-[50px] pb-[40px]">
+              <div className=" mt-[50px] pb-[40px] max-desktop:mt-[40px] transition-all max-desktop:pb-[30px]">
                 <div>
-                  <h1 className=" text-[54px] font-[900] text-[#0174B5]">
+                  <h1 className=" text-[54px] max-mobile:text-[25px] max-tablet:text-[30px] transition-all max-laptop:text-[35px] max-laptop:text-center max-desktop:text-[45px] font-[900] text-[#0174B5]">
                     The Brands We Have <br /> Catered To
                   </h1>
-                  <p className=" mt-[40px] max-w-[700px] text-[#0082CD] font-[300] mb-[40px]">
+                  <p className=" mt-[40px] max-desktop:mt-[20px] max-mobile:text-[11px] max-tablet:text-[12px] max-laptop:text-[13px] max-laptop:text-center max-laptop:mx-auto transition-all max-desktop:text-[14px] max-w-[700px] text-[#0082CD] font-[300] mb-[40px] max-desktop:max-w-[500px]">
                     We have assisted many companies in either establishing or
                     communicating their brand via different marketing mediums.
                   </p>
-                  <div className=" grid grid-cols-7 gap-y-[30px] sponsore__list">
+                  <div className=" grid grid-cols-7 max-mobile:grid-cols-3 max-tablet:grid-cols-5 gap-y-[30px] sponsore__list">
                     <div>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
