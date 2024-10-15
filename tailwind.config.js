@@ -10,6 +10,12 @@ module.exports = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: "#0174B5",
+        veryLight: "#99DBFE",
+        light: "#80D3FF",
+        dark: "#008DDC",
+        ultraDark: "#007EC3",
+        ultraDarkPro: "#0073B2",
       },
       screens: {
         "max-desktop": { max: "1536px" }, // For screens 1536px and below
