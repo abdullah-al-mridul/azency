@@ -137,7 +137,7 @@
   z-index: 10;
   bottom: 30px;
   left: 50%;
-  transform: translateX(-25%);
+  transform: translateX(-50%);
 }
 .we__create div div {
   display: flex;
@@ -201,4 +201,184 @@
 }
 .form__select div input {
   accent-color: #0073b2;
+}
+
+
+
+/* @media screen and(max-width:1536px) {
+  
+}
+@media screen and(max-width:1280px) {
+  
+}
+@media screen and(max-width:1024px) {
+  
+}
+@media screen and(max-width:768px) {
+  
+}
+@media screen and(max-width:640px) {
+  
+}
+@media screen and(max-width:375px) {
+  
+}
+@media screen and(max-width:299px) {
+  
+} */
+
+
+
+
+@media screen and (max-width:1536px) {
+  .why__us div {
+    padding: 10px;
+  }
+  .why__us div h6 {
+    font-size: 17px;
+    margin-bottom: 8px;
+  }
+  .why__us div p {
+    font-size: 13px;
+  }
+  .price__sec div h6 {
+    font-size: 25px;
+    transition: all 0.3s ease;
+  }
+  .price__sec div p {
+    font-size: 15px;
+  }
+  .price__sec div ul li {
+    font-size: 14px;
+  }
+  .price__sec div p:nth-child(4) {
+    font-size: 27px;
+  }
+  .price__sec div a {
+    font-size: 14px;
+  }
+  .faqs div h5 {
+    font-size: 15px;
+  }
+  .faqs div h5::after {
+    font-size: 17px;
+  }
+.faqs div p,.faq__list li {
+  font-size: 14px;
+}
+  .faq__list {
+    padding: 0 8px 0 8px;
+  }
+  .faq__list li:not(:last-child) {
+    margin-bottom: 8px;
+  }
+  .faq__list li::before {
+    height: 8px;
+    width: 8px;
+  }
+}
+
+@media screen and (max-width:1280px) {
+  
+}
+@media screen and (max-width:1024px) {
+  
+}
+@media screen and (max-width:768px) {
+  .hero__list li {
+    width: max-content;
+  }
+}
+@media screen and (max-width:640px) {
+  .hero__list li {
+    font-size: 12px;
+  }
+  .why__us div {
+    padding: 10px;
+  }
+  .why__us div h6 {
+    font-size: 17px;
+    margin-bottom: 8px;
+    /* width: max-content; */
+    text-align: center;
+    
+  }
+  .why__us div p {
+    font-size: 12px;
+    text-align: center;
+  }
+  .price__sec div h6 {
+    font-size: 20px;
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .price__sec div p {
+    font-size: 12px;
+    text-align: center;
+  }
+  .price__sec div ul {
+    width: max-content; 
+    max-width: 250px;
+    margin: 0 auto;
+  }
+  .price__sec div ul li {
+    font-size: 12px;
+  }
+  .price__sec div p:nth-child(4) {
+    font-size: 23px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+  .price__sec div a {
+    font-size: 12px;
+    display: block;
+    width: max-content;
+    margin: 0 auto;
+  }
+  .faqs div h5 {
+    font-size: 13px;
+  }
+  .faqs div h5::after {
+    font-size: 14px;
+  }
+.faqs div p,.faq__list li {
+  font-size: 12px;
+}
+  .faq__list {
+    padding: 0 8px 0 8px;
+  }
+  .faq__list li:not(:last-child) {
+    margin-bottom: 8px;
+  }
+  .faq__list li::before {
+    height: 6px;
+    width: 6px;
+  }
+
+  .we__create div div {
+    bottom: 10px;    
+  }
+  .we__create div div h6 {
+    font-size: 20px;
+    font-weight: 900;
+    color: #0073b2;
+    width: max-content;
+  }
+  .we__create div div p {
+    font-size: 12px;
+    color: #0073b2;
+  }
+  .form__select div:not(:last-child) {
+    margin-bottom: 8px;
+  }
+  .form__select div label {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width:375px) {
+  
+}
+@media screen and (max-width:299px) {
+  
 }

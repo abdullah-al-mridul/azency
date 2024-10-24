@@ -14,20 +14,21 @@ import "@/app/styles/woocommerce.css";
 const page = () => {
   return (
     <div>
-      <div className=" mt-[120px] flex">
-        <div>
+      <div className=" mt-[120px] max-laptop-sm:mt-[80px] flex">
+        <div className=" max-laptop-sm:w-full">
           <div>
-            <h1 className=" text-[40px] text-primary font-[900] w-max">
-              Bring Your Products Online <br /> With E-Commerce <br />
+            <h1 className=" text-[40px] max-mobile:text-[25px] transition-all max-desktop:text-[35px] text-primary font-[900] w-max max-laptop-sm:text-center max-laptop-sm:mx-auto max-mobile:w-full">
+              Bring Your Products Online <br className=" max-mobile:hidden" />{" "}
+              With E-Commerce <br className=" max-mobile:hidden" />
               Website
             </h1>
-            <p className=" text-[16px] mb-[35px] font-[300] max-w-[750px] text-[#505050] mt-[30px]">
+            <p className=" text-[16px] max-mobile:text-[12px] max-laptop-sm:text-center max-laptop-sm:mx-auto mb-[35px] font-[300] max-w-[750px] text-[#505050] mt-[30px] max-desktop:text-[14px] transition-all">
               We are experts in WooCommerce. We can help you with all your
               needs, whether it is to develop a new ecommerce site, update an
               existing store, or website customizations. We will help you with
               the most popular WordPress plugin.
             </p>
-            <ul className=" grid grid-cols-2 text-primary hero__list gap-[10px] text-[15px]">
+            <ul className=" grid grid-cols-2 max-tablet:grid-cols-1 max-tablet:place-items-center max-tablet:w-max max-tablet:mx-auto max-laptop-sm:max-w-[700px] max-laptop-sm:mx-auto max-desktop:text-[14px] text-primary hero__list gap-[10px] text-[15px]">
               <li>Fast and responsive E-Commerce site</li>
               <li>Attractive & eye-catching product layout</li>
               <li>Good user-experience</li>
@@ -35,26 +36,28 @@ const page = () => {
             </ul>
             <a
               href="#"
-              className=" mt-[30px] bg-veryLight/70 inline-block text-ultraDarkPro py-[10px] px-[30px] rounded-md hover:bg-veryLight transition-all text-[15px] "
+              className=" mt-[30px] max-laptop-sm:mx-auto max-laptop-sm:block max-laptop-sm:w-max max-desktop:text-[14px] bg-veryLight/70 inline-block text-ultraDarkPro py-[10px] px-[30px] max-mobile:py-[8px] max-mobile:px-[20px] max-mobile:text-[12px] rounded-md hover:bg-veryLight transition-all text-[15px] "
             >
               Get In Touch
             </a>
           </div>
         </div>
-        <div className=" max-w-[400px]">
+        <div className=" max-w-[400px] max-laptop-sm:hidden">
           <Image alt="woocommerce" src={Wayf} />
         </div>
       </div>
       <div className=" mt-[70px]">
-        <h4 className=" text-[14px] text-dark mb-[40px]">Why Us</h4>
-        <h2 className=" text-[54px] font-[900] text-primary mb-[20px]">
+        <h4 className=" text-[14px] text-dark mb-[40px] max-laptop-sm:mx-auto max-laptop-sm:w-max max-laptop-sm:mb-[30px] max-mobile:text-[12px] max-mobile:mb-[10px]">
+          Why Us
+        </h4>
+        <h2 className=" text-[54px] font-[900] text-primary max-desktop:text-[45px] transition-all mb-[20px] max-laptop-sm:w-max max-laptop-sm:mx-auto max-mobile:text-[30px] max-mobile:mb-[10px]">
           Our Services
         </h2>
-        <p className=" text-gray-500 font-[300] mb-[70px] max-w-[500px]">
+        <p className=" text-gray-500 font-[300] mb-[70px] max-w-[500px] max-desktop:text-[14px] max-laptop-sm:text-center max-laptop-sm:mx-auto max-mobile:text-[12px]">
           We help you to set up products in a way that best appeals to your
           target market.
         </p>
-        <div className=" grid grid-cols-3 gap-[40px] why__us">
+        <div className=" grid grid-cols-3 max-tablet:grid-cols-2 gap-[40px] why__us max-mobile:grid-cols-1">
           <div>
             <h6>Custom WooCommerce Development</h6>
             <p>
@@ -105,22 +108,27 @@ const page = () => {
         </div>
       </div>
       <div className=" mt-[60px]">
-        <h4 className=" text-primary text-[14px] mb-[30px]">Our Works</h4>
-        <h2 className=" text-[54px] font-[900] text-primary mb-[40px]">
+        <h4 className=" text-primary text-[14px] mb-[30px] max-laptop-sm:w-max max-laptop-sm:mx-auto max-mobile:text-[12px] max-mobile:mb-[10px]">
+          Our Works
+        </h4>
+        <h2
+          className=" text-[54px] font-[900] text-primary mb-[40px] max-desktop:text-[45px] max-desktop:mb-[30px] max-laptop-sm:w-max
+         max-laptop-sm:mx-auto max-mobile:text-[30px] max-mobile:mb-[15px]"
+        >
           Our Price Ranges
         </h2>
-        <p className=" max-w-[650px] text-gray-500">
+        <p className=" max-w-[650px] text-gray-500 max-desktop:text-[15px] max-laptop-sm:text-center max-laptop-sm:mx-auto max-mobile:text-[12px]">
           Whether you’re just starting out or looking for enterprise solutions,
           we’ve helped customers of all scale excel in business with tailored
           WooCommerce needs as per their requirement.
         </p>
         <a
           href="#"
-          className=" mt-[30px] mb-[100px] bg-veryLight/70 inline-block text-ultraDarkPro py-[10px] px-[30px] rounded-md hover:bg-veryLight transition-all text-[15px] "
+          className=" mt-[30px] mb-[100px] bg-veryLight/70 inline-block max-desktop:text-[14px] text-ultraDarkPro py-[10px] px-[30px] rounded-md hover:bg-veryLight transition-all text-[15px] max-laptop-sm:block max-laptop-sm:mx-auto max-laptop-sm:w-max max-mobile:text-[12px] max-mobile:py-[8px] max-mobile:px-[20px]"
         >
           Get In Touch
         </a>
-        <div className=" grid grid-cols-3 price__sec gap-[50px]">
+        <div className=" grid grid-cols-3 max-tablet:grid-cols-2 price__sec gap-[50px] max-mobile:grid-cols-1">
           <div>
             <h6>WooCommerce Maintenance</h6>
             <p>
@@ -169,7 +177,7 @@ const page = () => {
         </div>
       </div>
       <div className=" mt-[80px]">
-        <h2 className=" text-primary text-[54px] font-[900] mb-[30px]">
+        <h2 className=" text-primary text-[54px] font-[900] mb-[30px] max-desktop:text-[45px] transition-all max-desktop:mb-[20px] max-mobile:text-[30px] max-mobile:text-center">
           Frequently Asked Questions
         </h2>
         <div className=" p-[10px]">
@@ -177,13 +185,13 @@ const page = () => {
         </div>
       </div>
       <div className=" mt-[70px]">
-        <h4 className=" text-primary text-[14px] mb-[30px]">
+        <h4 className=" text-primary text-[14px] mb-[30px] max-laptop-sm:w-max max-laptop-sm:mx-auto max-mobile:text-[12px] max-mobile:mb-[10px]">
           Our Web Development Process
         </h4>
-        <h2 className=" text-[54px] font-[900] text-primary capitalize">
-          our design process <br /> in brief.
+        <h2 className=" text-[54px] font-[900] transition-all max-desktop:text-[45px] text-primary capitalize max-laptop-sm:text-center max-laptop-sm:w-max max-laptop-sm:mx-auto max-mobile:w-full max-mobile:text-[30px]">
+          our design process <br className=" max-mobile:hidden" /> in brief.
         </h2>
-        <p className=" text-gray-500 font-[300] max-w-[650px] mt-[20px] mb-[35px]">
+        <p className=" text-gray-500 font-[300] max-w-[650px] mt-[20px] mb-[35px] max-desktop:text-[15px] max-laptop-sm:text-center max-laptop-sm:mx-auto max-mobile:text-[12px]">
           The figure below represents a high level overview of the design and
           development process we use in creating a full project.
         </p>
@@ -192,17 +200,20 @@ const page = () => {
         </div>
       </div>
       <div className=" mt-[80px]">
-        <h4 className=" text-primary text-[14px] mb-[30px]">Our Works</h4>
-        <h2 className=" text-primary text-[54px] font-[900] mb-[30px]">
-          We Create Unique Sites To <br /> Match Your Requirements
+        <h4 className=" text-primary text-[14px] mb-[30px] max-laptop-sm:w-max max-laptop-sm:mx-auto max-mobile:text-[12px] max-mobile:mb-[10px]">
+          Our Works
+        </h4>
+        <h2 className=" text-primary text-[54px] font-[900] mb-[30px] max-desktop:text-[45px] transition-all max-laptop-sm:w-max max-laptop-sm:text-center max-laptop-sm:mx-auto max-mobile:w-full max-mobile:text-[30px] max-mobile:mb-[20px]">
+          We Create Unique Sites To <br className=" max-mobile:hidden" /> Match
+          Your Requirements
         </h2>
-        <p className=" text-gray-500 font-[300] max-w-[650px] mb-[20px]">
+        <p className=" text-gray-500 font-[300] max-w-[650px] mb-[20px] max-desktop:text-[15px] max-desktop:mb-[10px] max-laptop-sm:text-center max-laptop-sm:mx-auto max-mobile:text-[12px]">
           Here’s a glimpse of some of the WooCommerce websites we’ve created for
           our clients in the past years.
         </p>
         <a
           href="#"
-          className=" mt-[30px] mb-[100px] bg-veryLight/70 inline-block text-ultraDarkPro py-[10px] px-[30px] rounded-md hover:bg-veryLight transition-all text-[15px] "
+          className=" mt-[30px] mb-[100px] bg-veryLight/70 inline-block text-ultraDarkPro py-[10px] px-[30px] rounded-md hover:bg-veryLight transition-all text-[15px]  max-laptop-sm:block max-laptop-sm:mx-auto max-laptop-sm:w-max max-mobile:text-[12px] max-mobile:py-[8px] max-mobile:px-[20px]"
         >
           Get In Touch
         </a>
@@ -231,23 +242,23 @@ const page = () => {
         </div>
         <a
           href="#"
-          className=" mt-[30px] bg-veryLight/70 inline-block text-ultraDarkPro py-[10px] px-[30px] rounded-md hover:bg-veryLight transition-all text-[15px] "
+          className=" mt-[30px] bg-veryLight/70 inline-block text-ultraDarkPro py-[10px] px-[30px] rounded-md hover:bg-veryLight transition-all text-[15px] max-desktop:text-[14px] max-mobile:text-[12px] max-mobile:py-[8px] max-mobile:px-[20px]"
         >
           View More
         </a>
       </div>
-      <div className=" mt-[70px] flex items-center justify-between">
+      <div className=" mt-[70px] flex items-center max-tablet:flex-col max-tablet:justify-center max-tablet:gap-[60px] justify-between">
         <div>
-          <h1 className=" text-[40px] font-[900] text-primary">
-            {"Let's Push Your"} <br />
-            Company To New <br />
+          <h1 className=" text-[40px] font-[900] max-tablet:w-max max-tablet:text-center max-tablet:mx-auto text-primary max-desktop:text-[35px] transition-all max-mobile:text-[30px] max-mobile:w-full max-mobile:mb-[10px]">
+            {"Let's Push Your"} <br className=" max-mobile:hidden" />
+            Company To New <br className=" max-mobile:hidden" />
             Heights Together.
           </h1>
-          <p className=" font-[300] text-gray-500 max-w-[450px] mt-[20px] mb-[20px]">
+          <p className=" font-[300] text-gray-500 max-tablet:text-center max-w-[450px] mt-[20px] mb-[20px] max-desktop:text-[15px] max-mobile:text-[12px] max-mobile:mt-[15px]">
             We’ll deliver a service that exceeds all of your expectations…even
             if they’re ridiculously high.
           </p>
-          <ul className=" grid grid-cols-4 max-w-[450px] we__sponsore">
+          <ul className=" grid grid-cols-4 max-w-[450px] we__sponsore max-mobile:grid-cols-2 max-mobile:gap-y-[20px]">
             <li>
               <Image src={Nutrion} alt="Nutrion" />
             </li>
@@ -263,7 +274,7 @@ const page = () => {
           </ul>
         </div>
         <div>
-          <div className=" grid grid-cols-2 review">
+          <div className=" grid grid-cols-2 review max-mobile:grid-cols-1">
             <div>
               <h6>Danie</h6>
               <h5>Director & Founder Kalihali</h5>
@@ -306,8 +317,8 @@ const page = () => {
         </div>
       </div>
       <div className=" mt-[70px]">
-        <h2 className=" text-[54px] font-[900] mb-[50px] text-center text-primary">
-          Kick Start Your WooCommerce <br />
+        <h2 className=" text-[54px] font-[900] mb-[50px] text-center text-primary max-desktop:text-[45px] transition-all max-mobile:text-[30px] max-mobile:w-full">
+          Kick Start Your WooCommerce <br className=" max-mobile:hidden" />
           Journey With Us
         </h2>
         <form id="#">
@@ -315,28 +326,28 @@ const page = () => {
             <div className=" flex w-full mb-[20px] mx-auto flex-col">
               <label
                 htmlFor="fullName"
-                className=" mb-[5px] text-primary font-[600]"
+                className=" mb-[5px] text-primary font-[600] max-mobile:text-[13px]"
               >
                 Full Name
               </label>
               <input
-                className=" outline-none text-primary bg-primary/30 px-[15px] py-[10px] rounded-md border border-primary focus:outline-primary transition-all  outline-1 outline-transparent placeholder:text-gray-500"
+                className=" outline-none text-primary bg-primary/30 px-[15px] py-[10px] rounded-md border border-primary focus:outline-primary transition-all  outline-1 outline-transparent placeholder:text-gray-500 max-mobile:text-[14px]"
                 placeholder="John Doe"
                 type="text"
                 name="fullName"
                 id="fullName"
               />
             </div>
-            <div className=" flex gap-[20px]">
+            <div className=" flex gap-[20px] max-mobile:flex-col">
               <div className=" flex flex-col">
                 <label
-                  className=" mb-[5px] text-primary font-[600]"
+                  className=" mb-[5px] text-primary font-[600] max-mobile:text-[13px]"
                   htmlFor="email"
                 >
                   Email
                 </label>
                 <input
-                  className=" outline-none text-primary bg-primary/30 px-[15px] py-[10px] rounded-md border border-primary focus:outline-primary transition-all  outline-1 outline-transparent placeholder:text-gray-500"
+                  className=" outline-none text-primary bg-primary/30 px-[15px] py-[10px] rounded-md border border-primary focus:outline-primary transition-all  outline-1 outline-transparent placeholder:text-gray-500 max-mobile:text-[14px]"
                   type="email"
                   name="email"
                   placeholder="youremail@gmail.com"
@@ -345,13 +356,13 @@ const page = () => {
               </div>
               <div className=" flex flex-col">
                 <label
-                  className=" mb-[5px] text-primary font-[600]"
+                  className=" mb-[5px] text-primary font-[600] max-mobile:text-[13px]"
                   htmlFor="phone"
                 >
                   Phone
                 </label>
                 <input
-                  className=" outline-none text-primary bg-primary/30 px-[15px] py-[10px] rounded-md border border-primary focus:outline-primary transition-all  outline-1 outline-transparent placeholder:text-gray-500"
+                  className=" outline-none text-primary bg-primary/30 px-[15px] py-[10px] rounded-md border border-primary focus:outline-primary transition-all  outline-1 outline-transparent placeholder:text-gray-500 max-mobile:text-[14px]"
                   placeholder="Your Phone"
                   type="tel"
                   name="phone"
@@ -359,7 +370,7 @@ const page = () => {
                 />
               </div>
             </div>
-            <p className=" mt-[30px] font-[500] text-primary mb-[20px]">
+            <p className=" mt-[30px] font-[500] text-primary mb-[20px] max-mobile:text-[13px]">
               Type Of Website
             </p>
             <div className=" px-[10px] py-[5px] form__select">
@@ -416,7 +427,7 @@ const page = () => {
               </div>
             </div>
             <button
-              className=" mt-[20px] py-[10px] px-[30px] bg-primary/30 rounded-md text-primary font-[500] hover:bg-primary/40 transition-all mb-[50px]"
+              className=" mt-[20px] py-[10px] px-[30px] bg-primary/30 rounded-md text-primary font-[500] hover:bg-primary/40 transition-all mb-[50px] max-mobile:text-[12px] max-mobile:py-[8px] max-mobile:px-[20px]"
               type="submit"
             >
               Submit
